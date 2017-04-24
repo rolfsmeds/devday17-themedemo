@@ -1,0 +1,13 @@
+@mixin view-header {
+
+  .view-header {
+
+    .view-title {
+      font-size: 21px;
+      font-weight: $font-weight-light;
+      color: #777;
+    }
+
+  }
+
+}

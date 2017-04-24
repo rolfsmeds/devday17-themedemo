@@ -1,0 +1,35 @@
+@mixin toggle {
+
+  .toggle {
+
+    $toggle-height: round($v-unit-size / 2);
+    height: $toggle-height;
+    width: 50px;
+    background: $dark-bg;
+    border: 1px solid #aaa;
+    border-radius: $v-border-radius;
+    box-sizing: border-box;
+    position: relative;
+
+    input {
+      position: absolute;
+      clip: rect(0,0,0,0);
+    }
+
+    label {
+      position: absolute;
+      left: 0;
+      height: $toggle-height - 2px;
+      width: 50%;
+      background: $v-selection-color;
+      cursor: pointer;
+    }
+
+    input:checked + label {
+      left: auto;
+      right: 0;
+    }
+
+  }
+
+}

@@ -1,0 +1,106 @@
+// If you edit this file you need to compile the theme. See README.md for details.
+
+// Global variable overrides. Must be declared before importing Valo.
+
+// Defines the plaintext font size, weight and family. Font size affects general component sizing.
+//$v-font-size: 16px;
+//$v-font-weight: 300;
+//$v-font-family: "Open Sans", sans-serif;
+
+// Defines the border used by all components.
+//$v-border: 1px solid (v-shade 0.7);
+//$v-border-radius: 4px;
+
+// Affects the color of some component elements, e.g Button, Panel title, etc
+//$v-background-color: hsl(210, 0%, 98%);
+// Affects the color of content areas, e.g  Panel and Window content, TextField input etc
+//$v-app-background-color: $v-background-color;
+
+// Affects the visual appearance of all components
+//$v-gradient: v-linear 8%;
+//$v-bevel-depth: 30%;
+//$v-shadow-opacity: 5%;
+
+// Defines colors for indicating status (focus, success, failure)
+//$v-focus-color: valo-focus-color(); // Calculates a suitable color automatically
+//$v-friendly-color: #2c9720;
+//$v-error-indicator-color: #ed473b;
+
+// For more information, see: https://vaadin.com/book/-/page/themes.valo.html
+// Example variants can be copy/pasted from https://vaadin.com/wiki/-/wiki/Main/Valo+Examples
+
+
+//$v-background-color: #red;
+
+$v-app-background-color: #fff;
+
+$v-selection-color: $brand-color;
+$v-focus-color: $brand-color-2;
+
+
+//$v-font-color: red;
+
+$v-border-radius: 3px;
+$v-gradient: false;
+$v-bevel-depth: 42%;
+$v-shadow-opacity: 5%;
+
+$v-font-size: 14px;
+$v-unit-size: 34px;
+$v-font-weight: 400;
+$v-font-family: Roboto, sans-serif;
+
+$font-weight-light: 300;
+
+$my-layout-margin: 15px;
+$v-layout-margin-left: $my-layout-margin;
+$v-layout-margin-right: $my-layout-margin;
+$v-layout-margin-top: $my-layout-margin;
+$v-layout-margin-bottom: $my-layout-margin;
+
+$v-layout-spacing-horizontal: 10px;
+$v-layout-spacing-vertical: 15px;
+
+
+$v-grid-row-background-color: #fff;
+$v-grid-row-stripe-background-color: $v-grid-row-background-color;
+
+$v-grid-header-background-color: #eee;
+$v-grid-header-font-size: $v-font-size;
+$v-grid-cell-focused-border: none;
+
+@import "../valo/valo.scss";
+
+@import "colors";
+
+@import "components/button";
+@import "components/tabsheet";
+@import "components/navi-list.scss";
+@import "components/textfield";
+@import "components/toggle";
+
+@import "areas/navi-sidebar";
+@import "areas/view-header";
+@import "areas/view-footer";
+@import "areas/view-detail";
+
+
+$v-included-components: remove($v-included-components, optiongroup);
+
+
+@mixin mytheme {
+  @include valo;
+  @include button;
+  @include navi-sidebar;
+  @include view-header;
+  @include view-footer;
+  @include view-detail;
+  @include navi-list;
+  @include tabsheet;
+  @include textfield;
+  @include toggle;
+
+  // Insert your own theme rules here
+
+
+}

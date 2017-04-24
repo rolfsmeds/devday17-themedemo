@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.0.2">
+ </head>
+ <body>
+  <vaadin-horizontal-layout spacing="false" size-full>
+   <vaadin-css-layout style-name="navi-sidebar" height-full>
+    <vaadin-vertical-layout>
+     <vaadin-label style-name="app-title" plain-text :center>
+       Theme Demo 
+     </vaadin-label>
+     <vaadin-vertical-layout margin="false">
+      <vaadin-image source="theme://img/rofa.jpg" style-name="user-image" width="75px" height="75px" :middle :center></vaadin-image>
+      <vaadin-menu-bar style-name="borderless small" :middle :center>
+       <menu>
+         Rolf Smeds 
+        <menu>
+          Log out 
+        </menu>
+        <menu>
+          Account settings 
+        </menu>
+       </menu>
+      </vaadin-menu-bar>
+     </vaadin-vertical-layout>
+     <vaadin7-option-group style-name="navi-list" width-full>
+      <option>Dashboard</option>
+      <option selected>Contacts</option>
+      <option>Downloads</option>
+      <option>Reports</option>
+      <option>Settings</option>
+     </vaadin7-option-group>
+    </vaadin-vertical-layout>
+   </vaadin-css-layout>
+   <vaadin-vertical-layout style-name="view-layout" spacing="false" size-full margin="false" :expand>
+    <vaadin-horizontal-layout style-name="view-header" width-full margin>
+     <vaadin-label style-name="view-title" width-full plain-text :middle :expand>
+       Contacts 
+     </vaadin-label>
+     <vaadin-check-box primary-style-name="toggle" :middle :right></vaadin-check-box>
+     <vaadin-button style-name="small primary" plain-text :middle :right>
+       New Contact 
+     </vaadin-button>
+    </vaadin-horizontal-layout>
+    <vaadin-horizontal-layout style-name="view-layout" size-full :expand>
+     <vaadin-tab-sheet size-full :expand>
+      <tab caption="Favorites" selected>
+       <vaadin-vertical-split-panel>
+        <vaadin-grid size-full data-item-type="java.lang.String">
+         <table>
+          <colgroup>
+           <col column-id="first-name" sortable>
+           <col column-id="last-name" sortable>
+           <col column-id="email" sortable="false">
+          </colgroup>
+          <thead>
+           <tr default>
+            <th plain-text column-ids="first-name">First Name</th>
+            <th plain-text column-ids="last-name">Last Name</th>
+            <th plain-text column-ids="email">Email Address</th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr item="project1">
+            <td>Sam</td>
+            <td>Lowry</td>
+            <td>sam.lowry@example.com</td>
+           </tr>
+           <tr item="project2">
+            <td>Harry</td>
+            <td>Tuttle</td>
+            <td>harry.tuttle@example.com</td>
+           </tr>
+           <tr item="project3">
+            <td>Ida</td>
+            <td>Lowry</td>
+            <td>ida.lowry@example.com</td>
+           </tr>
+           <tr item="project4">
+            <td>Jack</td>
+            <td>Lint</td>
+            <td>jack.lint@example.com</td>
+           </tr>
+           <tr item="project5">
+            <td>Jill</td>
+            <td>Layton</td>
+            <td>jill.layton@example.com</td>
+           </tr>
+           <tr item="project6">
+            <td>Alma</td>
+            <td>Terrain</td>
+            <td>alma.terrain@example.com</td>
+           </tr>
+           <tr item="project7">
+            <td>Harvey</td>
+            <td>Lime</td>
+            <td>harvey.lime@example.com</td>
+           </tr>
+           <tr item="project8">
+            <td>Alfred</td>
+            <td>Kurtzmann</td>
+            <td>alfred.kurtzmann@example.com</td>
+           </tr>
+           <tr item="project9">
+            <td>Ian</td>
+            <td>Warren</td>
+            <td>ian.warren@example.com</td>
+           </tr>
+          </tbody>
+         </table>
+        </vaadin-grid>
+        <vaadin-vertical-layout spacing="false" size-full margin="false">
+         <vaadin-panel style-name="view-detail borderless" size-full :expand>
+          <vaadin-horizontal-layout style-name="view-detail-layout">
+           <vaadin-form-layout height="356px" margin>
+            <vaadin-combo-box caption="Title" data-item-type="java.lang.String">
+             <option item="Option1" selected>Mr.</option>
+             <option item="Option2">Ms.</option>
+             <option item="Option3">Dr.</option>
+             <option item="Option3">Dr.</option>
+            </vaadin-combo-box>
+            <vaadin-text-field caption="First name" value="Sam"></vaadin-text-field>
+            <vaadin-text-field caption="Middle name"></vaadin-text-field>
+            <vaadin-text-field caption="Last name" value="Lowry"></vaadin-text-field>
+            <vaadin-date-field caption="Date of Birth" value="1985-02-22"></vaadin-date-field>
+            <vaadin7-option-group caption="Gender">
+             <option>Female</option>
+             <option selected>Male</option>
+             <option>Other</option>
+            </vaadin7-option-group>
+           </vaadin-form-layout>
+           <vaadin-form-layout margin>
+            <vaadin-text-field caption="E-mail" style-name="long" value="sam.lowry@example.com"></vaadin-text-field>
+            <vaadin-text-field caption="Phone"></vaadin-text-field>
+            <vaadin-text-field caption="Street" style-name="long"></vaadin-text-field>
+            <vaadin-text-field caption="Zip code" width="5em"></vaadin-text-field>
+            <vaadin-text-field caption="City"></vaadin-text-field>
+            <vaadin-combo-box caption="Country" data-item-type="java.lang.String">
+             <option item="Option1">Finland</option>
+             <option item="Option2">Switzerland</option>
+             <option item="Option3" selected>Brazil</option>
+            </vaadin-combo-box>
+           </vaadin-form-layout>
+          </vaadin-horizontal-layout>
+         </vaadin-panel>
+         <vaadin-horizontal-layout style-name="view-footer" width-full margin :middle>
+          <vaadin-button style-name="primary" plain-text :middle>
+            Save Changes 
+          </vaadin-button>
+          <vaadin-button plain-text :middle>
+            Revert 
+          </vaadin-button>
+          <vaadin-button style-name="danger borderless" plain-text :middle :right :expand>
+            Delete 
+          </vaadin-button>
+         </vaadin-horizontal-layout>
+        </vaadin-vertical-layout>
+       </vaadin-vertical-split-panel>
+      </tab>
+      <tab caption="Internal">
+       <vaadin-css-layout></vaadin-css-layout>
+      </tab>
+      <tab caption="Customers">
+       <vaadin-css-layout></vaadin-css-layout>
+      </tab>
+     </vaadin-tab-sheet>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+  </vaadin-horizontal-layout>
+ </body>
+</html>
