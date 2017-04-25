@@ -2,14 +2,14 @@
 <html>
  <head>
   <meta charset="UTF-8">
-  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;notheme&quot;}">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
   <meta name="vaadin-version" content="8.0.2">
  </head>
  <body>
   <vaadin-horizontal-layout spacing="false" size-full>
-   <vaadin-css-layout style-name="navi-sidebar" height-full>
+   <vaadin-css-layout caption-as-html style-name="navi-sidebar" height-full>
     <vaadin-vertical-layout>
-     <vaadin-label style-name="app-title" plain-text :center>
+     <vaadin-label style-name="h2 no-margin app-title" plain-text :center>
        Theme Demo 
      </vaadin-label>
      <vaadin-vertical-layout margin="false">
@@ -26,7 +26,7 @@
        </menu>
       </vaadin-menu-bar>
      </vaadin-vertical-layout>
-     <vaadin-radio-button-group style-name="navi-list" width-full data-item-type="java.lang.String">
+     <vaadin-radio-button-group style-name="navi-list large" width-full data-item-type="java.lang.String">
       <option item="a">Dashboard</option>
       <option item="b" selected>Contacts</option>
       <option item="c">Downloads</option>
@@ -37,10 +37,9 @@
    </vaadin-css-layout>
    <vaadin-vertical-layout style-name="view-layout" spacing="false" size-full margin="false" :expand>
     <vaadin-horizontal-layout style-name="view-header" width-full margin>
-     <vaadin-label style-name="view-title" width-full plain-text :middle :expand>
+     <vaadin-label style-name="h2 no-margin" width-full plain-text :middle :expand>
        Contacts 
      </vaadin-label>
-     <vaadin-check-box caption="Toggle" :middle :right></vaadin-check-box>
      <vaadin-button style-name="small primary" plain-text :middle :right>
        New Contact 
      </vaadin-button>
@@ -153,7 +152,7 @@
           <vaadin-button plain-text :middle>
             Revert 
           </vaadin-button>
-          <vaadin-button style-name="danger borderless" plain-text :middle :right :expand>
+          <vaadin-button style-name="borderless" plain-text :middle :right :expand>
             Delete 
           </vaadin-button>
          </vaadin-horizontal-layout>

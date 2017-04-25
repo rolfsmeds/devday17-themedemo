@@ -3,14 +3,11 @@
     .view-detail {
         background: $dark-bg;
 
-        //@include valo-optiongroup;
+        $v-caption-font-weight: 300;
+        @include valo-optiongroup;
 
         //.v-radiobutton label {
         //    font-weight: $v-font-weight;
-        //}
-
-        //.v-panel {
-        //    background: $dark-bg;
         //}
 
     }
