@@ -26,13 +26,13 @@
        </menu>
       </vaadin-menu-bar>
      </vaadin-vertical-layout>
-     <vaadin7-option-group style-name="navi-list" width-full>
-      <option>Dashboard</option>
-      <option selected>Contacts</option>
-      <option>Downloads</option>
-      <option>Reports</option>
-      <option>Settings</option>
-     </vaadin7-option-group>
+     <vaadin-radio-button-group style-name="navi-list" width-full data-item-type="java.lang.String">
+      <option item="a">Dashboard</option>
+      <option item="b" selected>Contacts</option>
+      <option item="c">Downloads</option>
+      <option item="d">Reports</option>
+      <option item="e">Settings</option>
+     </vaadin-radio-button-group>
     </vaadin-vertical-layout>
    </vaadin-css-layout>
    <vaadin-vertical-layout style-name="view-layout" spacing="false" size-full margin="false" :expand>
@@ -49,7 +49,7 @@
      <vaadin-tab-sheet size-full :expand>
       <tab caption="Favorites" selected>
        <vaadin-vertical-split-panel>
-        <vaadin-grid size-full data-item-type="java.lang.String">
+        <vaadin-grid size-full data-item-type="java.lang.String" _id="masterGrid">
          <table>
           <colgroup>
            <col column-id="first-name" sortable>
@@ -126,11 +126,11 @@
             <vaadin-text-field caption="Middle name"></vaadin-text-field>
             <vaadin-text-field caption="Last name" value="Lowry"></vaadin-text-field>
             <vaadin-date-field caption="Date of Birth" value="1985-02-22"></vaadin-date-field>
-            <vaadin7-option-group caption="Gender">
-             <option>Female</option>
-             <option selected>Male</option>
-             <option>Other</option>
-            </vaadin7-option-group>
+            <vaadin-radio-button-group caption="Gender" data-item-type="java.lang.String">
+             <option item="F">Female</option>
+             <option item="M" selected>Male</option>
+             <option item="O">Other</option>
+            </vaadin-radio-button-group>
            </vaadin-form-layout>
            <vaadin-form-layout margin>
             <vaadin-text-field caption="E-mail" style-name="long" value="sam.lowry@example.com"></vaadin-text-field>

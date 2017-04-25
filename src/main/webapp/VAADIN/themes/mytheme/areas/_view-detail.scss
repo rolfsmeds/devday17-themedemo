@@ -2,6 +2,7 @@
 
   .view-detail {
     background: $dark-bg;
+
     @include valo-optiongroup;
 
     .v-radiobutton label {
