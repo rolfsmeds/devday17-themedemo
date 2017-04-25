@@ -2,14 +2,6 @@
 
     .view-detail {
         background: $dark-bg;
-
-        $v-caption-font-weight: 300;
-        @include valo-optiongroup;
-
-        //.v-radiobutton label {
-        //    font-weight: $v-font-weight;
-        //}
-
     }
 
 }

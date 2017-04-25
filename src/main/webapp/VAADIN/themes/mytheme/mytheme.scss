@@ -2,48 +2,48 @@
 
 // Global variable overrides. Must be declared before importing Valo.
 
-@import "colors";
-$v-app-background-color: $app-bg;
-$v-selection-color: $brand-color;
-$v-focus-color: $brand-color-2;
+//@import "colors";
+//$v-app-background-color: $app-bg;
+//$v-selection-color: $brand-color;
+//$v-focus-color: $brand-color-2;
 
-$v-border-radius: 3px;
-$v-gradient: false;
-$v-bevel-depth: 42%;
+//$v-border-radius: 3px;
+//$v-gradient: false;
+//$v-bevel-depth: 42%;
 
-$v-font-size: 14px;
-$v-unit-size: 34px;
-$v-font-family: Roboto, sans-serif;
-$v-font-weight: 400;
-$font-weight-light: 300;
+//$v-font-size: 14px;
+//$v-unit-size: 34px;
+//$v-font-family: Roboto, sans-serif;
+//$v-font-weight: 400;
+//$font-weight-light: 300;
 
 /* Layout margin and spacing */
-$my-layout-margin: 15px;
-$v-layout-margin-left: $my-layout-margin;
-$v-layout-margin-right: $my-layout-margin;
-$v-layout-margin-top: $my-layout-margin;
-$v-layout-margin-bottom: $my-layout-margin;
-$v-layout-spacing-horizontal: 10px;
-$v-layout-spacing-vertical: 15px;
+//$my-layout-margin: 15px;
+//$v-layout-margin-left: $my-layout-margin;
+//$v-layout-margin-right: $my-layout-margin;
+//$v-layout-margin-top: $my-layout-margin;
+//$v-layout-margin-bottom: $my-layout-margin;
+//$v-layout-spacing-horizontal: 10px;
+//$v-layout-spacing-vertical: 15px;
 
 /* Grid styles */
-$v-grid-row-background-color: #fff;
-$v-grid-row-stripe-background-color: $v-grid-row-background-color;
-$v-grid-header-background-color: #eee;
-$v-grid-header-font-size: $v-font-size;
-$v-grid-cell-focused-border: none;
+//$v-grid-row-background-color: #fff;
+//$v-grid-row-stripe-background-color: $v-grid-row-background-color;
+//$v-grid-header-background-color: #eee;
+//$v-grid-header-font-size: $v-font-size;
+//$v-grid-cell-focused-border: none;
 
 
 @import "../valo/valo.scss";
 
-@import "areas/navi-sidebar";
-@import "areas/view-detail";
-@import "areas/view-footer";
+//@import "areas/navi-sidebar";
+//@import "areas/view-detail";
+//@import "areas/view-footer";
 
-@import "components/button";
-@import "components/tabsheet";
-@import "components/textfield";
-@import "components/navi-list.scss";
+//@import "components/button";
+//@import "components/tabsheet";
+//@import "components/textfield";
+//@import "components/navi-list.scss";
 
 
 //$v-included-components: remove($v-included-components, button);
@@ -52,14 +52,14 @@ $v-grid-cell-focused-border: none;
 @mixin mytheme {
     @include valo;
 
-    @include navi-sidebar;
-    @include view-detail;
-    @include view-footer;
+    //@include navi-sidebar;
+    //@include view-detail;
+    //@include view-footer;
 
-    @include button;
-    @include tabsheet;
-    @include textfield;
-    @include navi-list;
+    //@include button;
+    //@include tabsheet;
+    //@include textfield;
+    //@include navi-list;
 
   // Insert your own theme rules here
 
