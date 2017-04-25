@@ -1,17 +1,17 @@
 @mixin tabsheet {
 
-  .v-tabsheet {
+    .v-tabsheet {
 
-      .v-tabsheet-tabcontainer {
+        .v-tabsheet-tabcontainer {
 
-        .v-tabsheet-tabitem > .v-caption {
-          font-size: 16px;
-          font-weight: $font-weight-light;
-          padding: 0 $v-layout-margin-left;
+            .v-tabsheet-tabitem > .v-caption {
+                font-size: 16px;
+                font-weight: $font-weight-light;
+                padding: 0 $v-layout-margin-left;
+            }
+
         }
 
-      }
-
-  }
+    }
 
 }

@@ -1,28 +1,27 @@
 @mixin navi-sidebar {
 
-  .navi-sidebar {
-    background: $brand-color;
-    width: 200px;
-    color: #fff;
+    .navi-sidebar {
+        background: $brand-color;
+        width: 200px;
+        color: #fff;
 
-    .app-title {
-      font-size: 21px;
-      font-weight: $font-weight-light;
-      color: currentColor;
+        //.app-title {
+        //    font-size: 21px;
+        //    font-weight: $font-weight-light;
+        //    color: currentColor;
+        //}
+
+        //.user-image {
+        //    border-radius: 50px;
+        //    border: 2px solid currentColor;
+        //}
+
+        //.v-menubar-menuitem {
+        //    color: currentColor;
+        //    font-size: 14px;
+        //    font-weight: $font-weight-light;
+        //}
+
     }
-
-    .user-image {
-      width: 75px;
-      border-radius: 50px;
-      border: 2px solid currentColor;
-    }
-
-    .v-menubar-menuitem {
-      color: currentColor;
-      font-size: 14px;
-      font-weight: $font-weight-light;
-    }
-
-  }
 
 }

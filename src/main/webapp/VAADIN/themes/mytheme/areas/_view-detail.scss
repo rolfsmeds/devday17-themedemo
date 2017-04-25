@@ -1,18 +1,18 @@
 @mixin view-detail {
 
-  .view-detail {
-    background: $dark-bg;
+    .view-detail {
+        background: $dark-bg;
 
-    @include valo-optiongroup;
+        //@include valo-optiongroup;
 
-    .v-radiobutton label {
-      font-weight: $v-font-weight;
+        //.v-radiobutton label {
+        //    font-weight: $v-font-weight;
+        //}
+
+        //.v-panel {
+        //    background: $dark-bg;
+        //}
+
     }
-
-    .v-panel {
-      background: $dark-bg;
-    }
-
-  }
 
 }

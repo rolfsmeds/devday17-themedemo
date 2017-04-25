@@ -1,36 +1,36 @@
 @mixin navi-list {
 
-  .navi-list {
-    border-top: 1px solid white;
-    padding-top: $v-layout-margin-top;
+    .navi-list {
+        border-top: 1px solid white;
+        padding-top: $v-layout-margin-top;
 
-    .v-radiobutton {
-      display: block;
-      margin-top: $v-layout-spacing-vertical / 2;
+        .v-radiobutton {
+            display: block;
+            margin-top: $v-layout-spacing-vertical / 2;
 
-      input {
-        position: absolute;
-        clip: rect(0,0,0,0);
-      }
-      label {
-        display: block;
-        box-sizing: border-box;
-        width: 100%;
-        padding-left: round($v-unit-size / 2);
-        border-radius: $v-border-radius;
-        line-height: $v-unit-size;
-        font-size: 16px;
-        font-weight: $font-weight-light;
-        cursor: pointer;
-        &:hover {
-          background: rgba(0,0,0,0.1);
+            input {
+                position: absolute;
+                clip: rect(0, 0, 0, 0);
+            }
+            label {
+                display: block;
+                box-sizing: border-box;
+                width: 100%;
+                padding-left: round($v-unit-size / 2);
+                border-radius: $v-border-radius;
+                line-height: $v-unit-size;
+                font-size: 16px;
+                font-weight: $font-weight-light;
+                cursor: pointer;
+                &:hover {
+                    background: rgba(0, 0, 0, 0.1);
+                }
+            }
+            input:checked + label {
+                background: rgba(0, 0, 0, 0.2);
+                font-weight: 400;
+            }
         }
-      }
-      input:checked + label {
-        background: rgba(0,0,0,0.2);
-        font-weight: 400;
-      }
     }
-  }
 
 }

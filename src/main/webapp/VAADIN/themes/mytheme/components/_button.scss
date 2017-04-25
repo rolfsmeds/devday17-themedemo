@@ -1,17 +1,17 @@
 @mixin button {
 
-  .v-button {
-    border-radius: 25px;
-  }
+    .v-button {
+        border-radius: 25px;
+    }
 
-  .v-button-primary .v-button-wrap .v-button-caption {
-    color: #fff;
-    font-weight: 400;
-    padding: 0 10px;
-  }
+    //.v-button-primary .v-button-wrap .v-button-caption {
+    //    color: #fff;
+    //    font-weight: 400;
+    //    padding: 0 10px;
+    //}
 
-  .v-button.borderless.danger {
-    color: $v-error-indicator-color;
-  }
+    //.v-button.borderless.danger {
+    //    color: $v-error-indicator-color;
+    //}
 
 }
